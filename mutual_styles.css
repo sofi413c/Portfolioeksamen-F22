@@ -1,0 +1,75 @@
+* {
+  all: unset;
+
+  display: revert;
+
+  cursor: revert;
+
+  box-sizing: border-box;
+}
+
+/*------------CSS VARIABLER--------*/
+html {
+  --orange: #c6964b;
+  --lysgroen: #8b853f;
+  --beige: #e5ded0;
+
+  /*gaps (margin og padding)*/
+  --space-xs: 1rem;
+  --space-s: 2rem;
+  --space-m: 3rem;
+  --space-l: 4rem;
+  --space-xl: 5rem;
+}
+
+/*--------FONTE--------*/
+@font-face {
+  font-family: comorant_medium;
+  src: url(fonts/Cormorant/Cormorant-Medium.ttf);
+}
+@font-face {
+  font-family: nunito;
+  src: url(fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: nunito_bold;
+  src: url(fonts/Nunito_Sans/NunitoSans-SemiBold.ttf);
+}
+h3 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 25px;
+}
+/*------------MENU--------*/
+
+header {
+    background-color: white;
+    padding-bottom: var(--space-xs);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+  font-family: nunito;
+}
+
+@media (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-inline: var(--space-m);
+    padding-top: var(--space-s);
+  }
+
+  nav ul {
+    padding-top: var(--space-m);
+    margin-right: var(--space-m);
+  }
+}
