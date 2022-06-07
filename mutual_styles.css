@@ -23,6 +23,11 @@ html {
 }
 
 /*--------FONTE--------*/
+
+@font-face {
+    font-family: comorant_regular;
+    src: url(fonts/Cormorant/Cormorant-Regular.ttf);
+}
 @font-face {
   font-family: comorant_medium;
   src: url(fonts/Cormorant/Cormorant-Medium.ttf);
@@ -36,13 +41,20 @@ html {
   font-family: nunito_bold;
   src: url(fonts/Nunito_Sans/NunitoSans-SemiBold.ttf);
 }
-h3 {
-  font-size: 18px;
+h1 {
+   font-size: 2rem; 
+}
+h2 {
+  font-size: 1.5rem;
 }
 
-h2 {
-  font-size: 25px;
+h3 {
+  font-size: 1.2rem;
 }
+
+
+
+
 /*------------MENU--------*/
 
 header {

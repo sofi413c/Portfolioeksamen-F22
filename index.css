@@ -1,0 +1,35 @@
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.splashbillede {
+  width: 98%;
+  height: 95%;
+  grid-column: 2;
+}
+
+.index_indhold {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+h1 {
+  font-family: comorant_regular;
+  display: grid;
+  justify-items: center;
+  margin-top: var(--space-l);
+}
+
+h3 {
+  font-family: nunito;
+  display: grid;
+  justify-content: center;
+  padding-right: var(--space-l);
+}
+
+section li a {
+  font-family: nunito;
+  display: grid;
+  margin-left: 9.7rem;
+}
