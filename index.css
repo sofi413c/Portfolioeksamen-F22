@@ -4,10 +4,7 @@ body {
   max-width: 100%;
 }
 
-.logo {
-  display: grid;
-  justify-content: center;
-}
+
 
 h1 {
   font-family: comorant_regular;

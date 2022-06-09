@@ -1,0 +1,105 @@
+/*---------GENEREL----------*/
+main {
+  margin-inline: var(--space-m);
+}
+
+h3 {
+  font-family: comorant;
+}
+
+p {
+  font-family: nunito;
+  line-height: 1.5rem;
+}
+/*---------FORMÅL/KONCEPT----------*/
+
+.tema_overskrift {
+  background-color: var(--moerkgroen);
+  color: white;
+  padding: var(--space-s);
+  margin-bottom: var(--space-s);
+
+  font-family: nunito;
+  box-shadow: 5px 8px 25px grey;
+}
+
+section h3 {
+  margin-top: var(--space-m);
+}
+
+.splashbillede_web {
+  max-width: 100%;
+  margin-top: var(--space-s);
+}
+
+.containerline {
+  background-color: var(--lysbeige);
+  padding: 0.5rem;
+  margin-block: var(--space-m);
+}
+
+/*---------HIGHLIGHTS----------*/
+
+.galleri_web,
+.lastchild_web {
+  max-width: 100%;
+}
+
+.hightlight1,
+.hightlight2 {
+  margin-top: var(--space-s);
+}
+
+/*_______________DESKTOP_____________*/
+
+/*-------FORMÅL/KONCEPT--------*/
+@media (min-width: 800px) {
+  main {
+    margin-inline: var(--space-xl);
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .koncept {
+    grid-column: 1;
+  }
+
+  .splashbillede_web {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+  }
+
+  /*-------HIGHTLIGHTS--------*/
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2rem;
+    gap: 2rem;
+  }
+
+  .lastchild {
+    grid-column: 1;
+  }
+
+  .galleri_web {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .hightlight1 {
+    writing-mode: sideways-rl;
+    grid-column: 3;
+
+    grid-row: 1 / span 2;
+  }
+
+  .grid3 {
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr;
+  }
+
+  
+}

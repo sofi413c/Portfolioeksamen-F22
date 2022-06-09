@@ -13,6 +13,8 @@ html {
   --orange: #c6964b;
   --lysgroen: #8b853f;
   --beige: #e5ded0;
+  --moerkgroen: #5e673c;
+  --lysbeige: #efebe2;
 
   /*gaps (margin og padding)*/
   --space-xs: 1rem;
@@ -59,12 +61,32 @@ header {
   padding-bottom: var(--space-xs);
   white-space: nowrap;
 }
+
+.navlogo {
+  display: grid;
+  justify-content: center;
+  padding-block: var(--space-xs);
+}
+
 nav ul {
   display: flex;
   justify-content: center;
   gap: 30px;
   list-style: none;
   font-family: nunito;
+}
+
+/*---------KNAP----------*/
+
+.grid3 {
+  display: grid;
+}
+.link_produkt {
+  background-color: var(--moerkgroen);
+  padding: var(--space-s);
+  color: white;
+  text-align: center;
+  margin-top: var(--space-s);
 }
 
 /*---------FOOTER-----------*/
