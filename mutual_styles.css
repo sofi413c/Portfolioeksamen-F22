@@ -78,9 +78,6 @@ nav ul {
 
 /*---------KNAP----------*/
 
-.grid3 {
-  display: grid;
-}
 .link_produkt {
   background-color: var(--moerkgroen);
   padding: var(--space-s);
@@ -128,5 +125,13 @@ nav ul {
   nav ul {
     padding-top: var(--space-m);
     margin-right: var(--space-m);
+  }
+  /*----------KNAP--------*/
+  .link_produkt {
+    margin-inline: 35rem;
+  }
+  /*-------FOOTER----------*/
+  .footer img {
+    max-width: 2%;
   }
 }
