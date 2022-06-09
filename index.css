@@ -1,35 +1,77 @@
-section {
+body {
+  background-image: url(billeder/splashmobile.svg);
+  background-size: cover;
+  max-width: 100%;
+}
+
+.logo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.splashbillede {
-  width: 98%;
-  height: 95%;
-  grid-column: 2;
-}
-
-.index_indhold {
-  grid-column: 1;
-  grid-row: 1;
+  justify-content: center;
 }
 
 h1 {
   font-family: comorant_regular;
+  color: white;
+  white-space: nowrap;
   display: grid;
-  justify-items: center;
-  margin-top: var(--space-l);
+  justify-content: center;
+  margin-top: var(--space-xl);
 }
 
 h3 {
   font-family: nunito;
+  color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+
   display: grid;
   justify-content: center;
-  padding-right: var(--space-l);
+  margin-right: 5.5rem;
+  padding-bottom: var(--space-xs);
+  margin-bottom: var(--space-xs);
+  border-bottom: solid 1px lightgray;
 }
 
 section li a {
   font-family: nunito;
-  display: grid;
-  margin-left: 9.7rem;
+  color: white;
+  margin-left: 6.5rem;
+  line-height: 3rem;
+}
+
+/*-----------FOOTER----------*/
+footer {
+  font-family: nunito;
+  background-color: white;
+  padding: var(--space-xs);
+  font-size: 0.7rem;
+  text-align: center;
+  position: sticky;
+  top: 100vh;
+}
+body {
+  min-height: 100vh;
+}
+
+@media (min-width: 700px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    display: grid;
+    justify-items: center;
+    margin-top: var(--space-l);
+  }
+
+  h3 {
+    display: grid;
+    justify-content: center;
+    padding-right: var(--space-l);
+  }
+
+  section li a {
+    margin-left: 9.7rem;
+  }
 }
