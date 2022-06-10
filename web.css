@@ -1,11 +1,10 @@
-
-
 /*---------FORMÅL/KONCEPT----------*/
 
 .tema_overskrift {
   background-color: var(--moerkgroen);
   color: white;
   padding: var(--space-s);
+  padding-left: var(--space-m);
   margin-bottom: var(--space-m);
 
   font-family: nunito;
@@ -43,12 +42,23 @@ section h3 {
   display: grid;
 }
 /*_______________DESKTOP_____________*/
-
-/*-------FORMÅL/KONCEPT--------*/
 @media (min-width: 800px) {
   main {
     margin-inline: var(--space-xl);
   }
+  .tema_overskrift {
+    background-color: var(--moerkgroen);
+    color: white;
+    padding: var(--space-s);
+    padding-left: var(--space-xl);
+    margin-bottom: var(--space-m);
+    margin-right: var(--space-xl);
+
+    font-family: nunito;
+    box-shadow: 5px 8px 25px grey;
+  }
+
+  /*-------FORMÅL/KONCEPT--------*/
 
   .grid1 {
     display: grid;
@@ -102,5 +112,4 @@ section h3 {
   }
 
   /*----------KNAP--------*/
-
 }
