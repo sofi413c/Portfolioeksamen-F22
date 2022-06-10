@@ -1,23 +1,12 @@
-/*---------GENEREL----------*/
-main {
-  margin-inline: var(--space-m);
-}
 
-h3 {
-  font-family: comorant;
-}
 
-p {
-  font-family: nunito;
-  line-height: 1.5rem;
-}
 /*---------FORMÅL/KONCEPT----------*/
 
 .tema_overskrift {
   background-color: var(--moerkgroen);
   color: white;
   padding: var(--space-s);
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--space-m);
 
   font-family: nunito;
   box-shadow: 5px 8px 25px grey;
@@ -67,12 +56,7 @@ section h3 {
     gap: 2rem;
   }
 
-  .koncept {
-    grid-column: 1;
-  }
-
   .splashbillede_web {
-    grid-row: 1 / span 2;
     grid-column: 2;
   }
 
@@ -95,8 +79,8 @@ section h3 {
   .hightlight1 {
     writing-mode: sideways-rl;
     grid-column: 3;
-
     grid-row: 1 / span 2;
+    margin-top: 0;
   }
 
   .grid3 {
@@ -110,6 +94,7 @@ section h3 {
     writing-mode: sideways-lr;
     grid-row: 1;
     place-self: start;
+    margin-top: 0;
   }
 
   .lastchild_web {
@@ -117,7 +102,5 @@ section h3 {
   }
 
   /*----------KNAP--------*/
-  .link_produkt {
-    grid-column: 1 / span2;
-  }
+
 }

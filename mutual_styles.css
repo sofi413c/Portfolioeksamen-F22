@@ -45,13 +45,25 @@ html {
 }
 h1 {
   font-size: 2rem;
+  font-family: comorant_regular;
 }
 h2 {
   font-size: 1.5rem;
+  font-family: nunito;
 }
 
 h3 {
   font-size: 1.2rem;
+  font-family: comorant_medium;
+}
+
+p {
+  font-family: nunito;
+  line-height: 1.5rem;
+}
+/*---------GENEREL----------*/
+main {
+  margin-inline: var(--space-m);
 }
 
 /*------------MENU--------*/
@@ -111,7 +123,7 @@ nav ul {
   margin-top: var(--space-xs);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -128,7 +140,8 @@ nav ul {
   }
   /*----------KNAP--------*/
   .link_produkt {
-    margin-inline: 35rem;
+    grid-column: 1 / span 3;
+    margin-inline: 30rem;
   }
   /*-------FOOTER----------*/
   .footer img {

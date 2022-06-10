@@ -19,22 +19,12 @@
 h3 {
   color: white;
   margin-top: var(--space-s);
-  font-family: comorant_medium;
 }
 
 p {
   color: white;
-  font-family: nunito;
 }
 
-h3,
-p {
-  line-height: 25px;
-}
-
-h2 {
-  font-family: comorant_medium;
-}
 /*------------container2---------*/
 
 .container2 {
