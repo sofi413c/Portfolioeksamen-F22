@@ -1,10 +1,17 @@
+@media (max-width: 800px) {
+  .desktop_splashbillede {
+    display: none;
+  }
+}
 body {
   background-image: url(billeder/splashmobile.svg);
   background-size: cover;
   max-width: 100%;
 }
 
-
+main {
+  margin-inline: 0;
+}
 
 h1 {
   font-family: comorant_regular;
@@ -24,9 +31,15 @@ h3 {
   display: grid;
   justify-content: center;
   margin-right: 5.5rem;
-  padding-bottom: var(--space-xs);
+  margin-bottom: 1.3rem;
+}
+
+.underline {
   margin-bottom: var(--space-xs);
-  border-bottom: solid 1px lightgray;
+  padding: 0.3px;
+  background-color: white;
+  margin-right: 5rem;
+  margin-left: 6.3rem;
 }
 
 section li a {
@@ -50,7 +63,10 @@ body {
   min-height: 100vh;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
+  body {
+    background-image: none;
+  }
   section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -60,15 +76,42 @@ body {
     display: grid;
     justify-items: center;
     margin-top: var(--space-l);
+    color: black;
+    padding-right: 10.5rem;
   }
 
   h3 {
     display: grid;
     justify-content: center;
-    padding-right: var(--space-l);
+    color: black;
+    padding-right: 10.5rem;
+  }
+
+  .underline {
+    background-color: black;
+    margin-right: 10rem;
+    margin-left: 9.7rem;
   }
 
   section li a {
     margin-left: 9.7rem;
+    color: black;
   }
+
+  .desktop_splashbillede {
+    max-width: 80%;
+    margin-left: var(--space-xl);
+  }
+
+  /*-----------FOOTER----------*/
+footer {
+  font-family: nunito;
+  background-color: white;
+  padding: var(--space-xs);
+  font-size: 0.7rem;
+  text-align: center;
+  position: sticky;
+  top: 100vh;
+  margin-top: var(--space-m);
+}
 }

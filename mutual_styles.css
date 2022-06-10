@@ -71,7 +71,6 @@ main {
 header {
   background-color: white;
   padding-bottom: var(--space-xs);
-  white-space: nowrap;
 }
 
 .navlogo {
@@ -130,13 +129,12 @@ nav ul {
   }
 
   .logo {
-    margin-inline: var(--space-m);
-    padding-top: var(--space-s);
+    padding-inline: 2rem;
   }
 
   nav ul {
     padding-top: var(--space-m);
-    margin-right: var(--space-m);
+    margin-right: var(--space-xl);
   }
   /*----------KNAP--------*/
   .link_produkt {
