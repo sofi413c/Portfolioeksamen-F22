@@ -61,16 +61,28 @@ p {
   font-family: nunito;
   line-height: 1.5rem;
 }
+
+a {
+  font-family: nunito;
+}
+
+/*---------EFFEKTER----------*/
+
+.menu-bar a:hover {
+  border-bottom: 1px solid black;
+}
+
+/* .link_produkt a:hover {
+  background-color: black;
+  cursor: pointer;
+} */
+
 /*---------GENEREL----------*/
 main {
   margin-inline: var(--space-m);
 }
 
 /*------------MENU--------*/
-
-.menu-bar a:hover {
-  border-bottom: 1px solid black;
-}
 
 header {
   background-color: white;
