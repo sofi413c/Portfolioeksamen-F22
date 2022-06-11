@@ -1,3 +1,8 @@
+/*------------menu---------*/
+.toggle_animation {
+  font-weight: bolder;
+  font-size: large;
+}
 .tema_overskrift {
   background-color: var(--orange);
   color: white;
@@ -80,7 +85,7 @@ section h3 {
   /*----------FORMÅL/KONCEPT---------*/
 
   main {
-      margin-right: var(--space-xl);
+    margin-right: var(--space-xl);
   }
   .grid1 {
     display: grid;

@@ -1,6 +1,7 @@
 /*------------menu---------*/
 .toggle_om {
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: large;
 }
 /*------------container1---------*/
 
@@ -9,7 +10,8 @@
   box-shadow: 5px 8px 25px grey;
   padding: var(--space-m);
   display: grid;
-  margin: var(--space-s);
+  margin-block: var(--space-s);
+
 }
 .selvportraet {
   border-radius: 50%;
@@ -26,27 +28,13 @@ p {
 }
 
 /*------------container2---------*/
-
 .container2 {
   background-color: var(--lysgroen);
   box-shadow: 5px 8px 25px grey;
-  margin-block: var(--space-s);
-}
-.container2_indhold {
-  display: grid;
-  grid-template-columns: 12rem 1fr;
-}
-
-.indhold_col2 {
-  display: grid;
-  grid-template-columns: 12rem 1fr;
-}
-.container2 h3 {
-  margin-left: var(--space-xs);
-}
-
-.container2 p {
-  margin-block: var(--space-s);
+  padding-block: var(--space-xs);
+  padding-bottom: var(--space-s);
+  padding-left: var(--space-s);
+  margin-bottom: var(--space-s);
 }
 
 /*------------container3---------*/
@@ -54,9 +42,7 @@ p {
 .container3 {
   background-color: var(--beige);
   box-shadow: 5px 8px 25px grey;
-
-  margin-inline: var(--space-xs);
-  padding: var(--space-m);
+  padding: var(--space-s);
 }
 
 .container3 h2 {
@@ -69,23 +55,40 @@ p {
 /*----------DESKTOP-----------*/
 
 @media (min-width: 800px) {
+  /*----------container1-----------*/
+
+  .container1 {
+    margin-right: var(--space-m);
+    margin-top: 0;
+  }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+  }
   .selvportraet {
     max-width: 50%;
   }
 
-  .gridcol2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+  /*----------container2-----------*/
   .container2 {
-    grid-template-areas: none;
-  }
-  .container2_indhold {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: var(--space-l);
+  }
+
+  .indhold_col1 {
     grid-column: 1;
   }
   .indhold_col2 {
     grid-column: 2;
+  }
+  /*----------PROFILBESKRIVELSE-----------*/
+  .container3 {
+    padding: var(--space-l);
+    padding-inline: var(--space-m);
+  }
+
+  .container3 h1 {
+    padding-bottom: var(--space-xs);
   }
 }

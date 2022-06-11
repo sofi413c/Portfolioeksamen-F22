@@ -68,6 +68,10 @@ main {
 
 /*------------MENU--------*/
 
+.menu-bar a:hover {
+  border-bottom: 1px solid black;
+}
+
 header {
   background-color: white;
   padding-bottom: var(--space-xs);
