@@ -1,5 +1,3 @@
-
-
 @media (max-width: 800px) {
   .desktop_splashbillede {
     display: none;
@@ -105,15 +103,31 @@ body {
     margin-left: var(--space-xl);
   }
 
+  .desktop_splashbillede,
+  .portfolio_index {
+    animation-name: fadein_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes fadein_kf {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   /*-----------FOOTER----------*/
-footer {
-  font-family: nunito;
-  background-color: white;
-  padding: var(--space-xs);
-  font-size: 0.7rem;
-  text-align: center;
-  position: sticky;
-  top: 100vh;
-  margin-top: var(--space-m);
-}
+  footer {
+    font-family: nunito;
+    background-color: white;
+    padding: var(--space-xs);
+    font-size: 0.7rem;
+    text-align: center;
+    position: sticky;
+    top: 100vh;
+    margin-top: var(--space-m);
+  }
 }

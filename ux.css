@@ -6,11 +6,6 @@
 
 .tema_overskrift {
   background-color: var(--lysgroen);
-  color: white;
-  padding: var(--space-s);
-  padding-left: var(--space-m);
-  margin-bottom: var(--space-m);
-  box-shadow: 5px 8px 25px grey;
 }
 
 /*-------FORMÅL/KONCEPT---------*/
@@ -61,17 +56,7 @@ section h3 {
   main {
     margin-inline: var(--space-xl);
   }
-  .tema_overskrift {
-    background-color: var(--lysgroen);
-    color: white;
-    padding: var(--space-s);
-    padding-left: var(--space-xl);
-    margin-bottom: var(--space-m);
-    margin-right: var(--space-xl);
-
-    font-family: nunito;
-    box-shadow: 5px 8px 25px grey;
-  }
+  
   /*--------FORMÅL/KONCEPT---------*/
   .grid1 {
     display: grid;

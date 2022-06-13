@@ -1,0 +1,17 @@
+/*------------menu---------*/
+.toggle_web {
+  font-weight: bolder;
+  font-size: large;
+}
+
+  .tema_overskrift {
+    background-color: var(--moerkgroen);
+    color: white;
+
+    font-family: nunito;
+    box-shadow: 5px 8px 25px grey;
+  }
+
+  
+
+  

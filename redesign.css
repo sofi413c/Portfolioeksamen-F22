@@ -6,11 +6,6 @@
 
 .tema_overskrift {
   background-color: var(--brun);
-  box-shadow: 5px 8px 25px grey;
-  color: white;
-  padding: var(--space-s);
-  padding-left: var(--space-m);
-  margin-bottom: var(--space-m);
 }
 
 section h3 {
@@ -198,6 +193,9 @@ section h3 {
     margin-top: 0;
   }
 
+  .proces_redesign {
+    max-width: 100%;
+  }
   .link_produkt {
     margin-top: var(--space-xl);
   }

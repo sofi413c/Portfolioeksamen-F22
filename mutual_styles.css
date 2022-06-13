@@ -29,7 +29,7 @@ html {
 
 @font-face {
   font-family: comorant_regular;
-    font-display: swap; /*fortæller at fonten skal vises med det samme, når fonten er loaded, da denne font er en stor fil*/
+  font-display: swap; /*fortæller at fonten skal vises med det samme, når fonten er loaded, da denne font er en stor fil*/
   src: url(fonts/Cormorant/Cormorant-Regular.ttf);
 }
 @font-face {
@@ -77,10 +77,44 @@ a {
   border-bottom: 1px solid black;
 }
 
-/* .link_produkt a:hover {
-  background-color: black;
-  cursor: pointer;
-} */
+.grid0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.tema_overskrift {
+  box-shadow: 5px 8px 25px grey;
+  padding: var(--space-s);
+  margin-bottom: var(--space-m);
+
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  z-index: -1;
+
+  animation-name: flyvtilsiden_kf;
+  animation-duration: 2s;
+}
+
+@keyframes flyvtilsiden_kf {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.tema_navn {
+  grid-column: 1;
+  grid-row: 1;
+  color: white;
+  padding: var(--space-s);
+  padding-left: var(--space-m);
+  margin-bottom: var(--space-m);
+  font-family: nunito;
+  white-space: nowrap;
+}
 
 /*---------GENEREL----------*/
 main {
@@ -116,8 +150,22 @@ nav ul {
   color: white;
   text-align: center;
   margin-top: var(--space-s);
+
+  animation-name: puls_kf;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
+@keyframes puls_kf {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 /*---------FOOTER-----------*/
 
 .grid {
@@ -155,6 +203,10 @@ nav ul {
 
   nav ul {
     padding-top: var(--space-m);
+    margin-right: var(--space-xl);
+  }
+
+  .tema_overskrift {
     margin-right: var(--space-xl);
   }
   /*----------KNAP--------*/

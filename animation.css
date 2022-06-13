@@ -5,12 +5,6 @@
 }
 .tema_overskrift {
   background-color: var(--orange);
-  color: white;
-  padding: var(--space-s);
-  padding-left: var(--space-m);
-  margin-bottom: var(--space-m);
-  white-space: nowrap;
-  box-shadow: 5px 8px 25px grey;
 }
 
 /*----------FORMÅL/KONCEPT---------*/
@@ -69,18 +63,6 @@ section h3 {
 
 /*_____________DESKTOP______________*/
 @media (min-width: 800px) {
-  .tema_overskrift {
-    background-color: var(--orange);
-    color: white;
-    padding: var(--space-s);
-    padding-left: var(--space-xl);
-    margin-bottom: var(--space-m);
-    margin-right: var(--space-xl);
-
-    font-family: nunito;
-    box-shadow: 5px 8px 25px grey;
-  }
-
   /*----------FORMÅL/KONCEPT---------*/
 
   main {
