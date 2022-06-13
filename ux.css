@@ -10,8 +10,6 @@
   padding: var(--space-s);
   padding-left: var(--space-m);
   margin-bottom: var(--space-m);
-
-  font-family: nunito;
   box-shadow: 5px 8px 25px grey;
 }
 

@@ -15,6 +15,7 @@ html {
   --beige: #e5ded0;
   --moerkgroen: #5e673c;
   --lysbeige: #efebe2;
+  --brun: #554331;
 
   /*gaps (margin og padding)*/
   --space-xs: 1rem;
@@ -28,19 +29,23 @@ html {
 
 @font-face {
   font-family: comorant_regular;
+    font-display: swap; /*fortæller at fonten skal vises med det samme, når fonten er loaded, da denne font er en stor fil*/
   src: url(fonts/Cormorant/Cormorant-Regular.ttf);
 }
 @font-face {
   font-family: comorant_medium;
+  font-display: swap;
   src: url(fonts/Cormorant/Cormorant-Medium.ttf);
 }
 @font-face {
   font-family: nunito;
+  font-display: swap;
   src: url(fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf);
 }
 
 @font-face {
   font-family: nunito_bold;
+  font-display: swap;
   src: url(fonts/Nunito_Sans/NunitoSans-SemiBold.ttf);
 }
 h1 {

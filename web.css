@@ -1,5 +1,5 @@
 /*------------menu---------*/
-.toggle_web{
+.toggle_web {
   font-weight: bolder;
   font-size: large;
 }
@@ -7,13 +7,11 @@
 
 .tema_overskrift {
   background-color: var(--moerkgroen);
+  box-shadow: 5px 8px 25px grey;
   color: white;
   padding: var(--space-s);
   padding-left: var(--space-m);
   margin-bottom: var(--space-m);
-
-  font-family: nunito;
-  box-shadow: 5px 8px 25px grey;
 }
 
 section h3 {
