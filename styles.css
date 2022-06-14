@@ -782,8 +782,9 @@ section li a {
 .burgermenu_pf h3 {
   margin-top: var(--space-xs);
 }
-.laes_mere_her1 {
+.laes_mere_her {
   font-weight: bolder;
+  text-decoration: underline;
 }
 
 .containerline_pf {
