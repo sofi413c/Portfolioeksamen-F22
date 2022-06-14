@@ -5,14 +5,14 @@
 }
 /*------------container1---------*/
 
-.container1 {
+.container1_om {
   background-color: var(--orange);
   box-shadow: 5px 8px 25px grey;
   padding: var(--space-m);
   display: grid;
   margin-block: var(--space-s);
 }
-.container1 img {
+.container1_om img {
   border-radius: 50%;
   width: 50%;
 }
@@ -27,7 +27,7 @@ p {
 }
 
 /*------------container2---------*/
-.container2 {
+.container2_om {
   background-color: var(--lysgroen);
   box-shadow: 5px 8px 25px grey;
   padding-block: var(--space-xs);
@@ -38,20 +38,20 @@ p {
 
 /*------------container3---------*/
 
-.container3 {
+.container3_om {
   background-color: var(--beige);
   box-shadow: 5px 8px 25px grey;
   padding: var(--space-s);
 }
 
-.container3 h1 {
+.container3_om h1 {
   margin-bottom: var(--space-xs);
 }
-.container3 p {
+.container3_om p {
   color: black;
 }
 
-.beskrivelse1{
+.beskrivelse1_om {
   margin-bottom: var(--space-xs);
 }
 
@@ -60,11 +60,11 @@ p {
 @media (min-width: 800px) {
   /*----------container1-----------*/
 
-  .container1 {
+  .container1_om {
     margin-right: var(--space-m);
     margin-top: 0;
   }
-  .grid1 {
+  .grid1_om {
     display: grid;
     grid-template-columns: 30rem 1fr;
   }
@@ -73,35 +73,33 @@ p {
   }
 
   /*----------container2-----------*/
-  .container2 {
+  .container2_om {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: var(--space-l);
   }
 
-  .indhold_col1 {
+  .indhold_col1_om {
     grid-column: 1;
   }
-  .indhold_col2 {
+  .indhold_col2_om {
     grid-column: 2;
   }
   /*----------PROFILBESKRIVELSE-----------*/
-  .container3 {
+  .container3_om {
     padding: var(--space-l);
     padding-inline: var(--space-m);
     padding-right: var(--space-xl);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-
   }
 
-
-  .beskrivelse1 {
+  .beskrivelse1_om {
     grid-column: 1;
   }
 
-  .beskrivelse2 {
+  .beskrivelse2_om {
     grid-column: 2;
   }
 }

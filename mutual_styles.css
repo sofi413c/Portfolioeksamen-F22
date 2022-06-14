@@ -72,6 +72,10 @@ a {
   font-family: nunito;
 }
 
+li {
+  font-family: nunito;
+}
+
 /*---------EFFEKTER----------*/
 
 .menu-bar a:hover {
@@ -80,14 +84,16 @@ a {
 
 .grid0 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
 }
-.tema_overskrift {
+.tema_overskrift_web,
+.tema_overskrift_ux,
+.tema_overskrift_ani,
+.tema_overskrift_redesign,
+.tema_overskrift_portfolio,
+.tema_overskrift_om {
   box-shadow: 5px 8px 25px grey;
   padding: var(--space-s);
   margin-bottom: var(--space-m);
-
   grid-row: 1;
   grid-column: 1 / span 2;
   z-index: -1;
@@ -107,18 +113,15 @@ a {
 }
 
 .tema_navn {
-  grid-column: 1;
-  grid-row: 1;
   color: white;
   padding: var(--space-s);
   padding-left: var(--space-m);
   margin-bottom: var(--space-m);
-  font-family: nunito;
   white-space: nowrap;
 }
 
 /*---------GENEREL----------*/
-main {
+.main_margin {
   margin-inline: var(--space-m);
 }
 
@@ -192,6 +195,8 @@ nav ul {
   margin-top: var(--space-xs);
 }
 
+/*________________DESKTOP_________________*/
+
 @media (min-width: 800px) {
   header {
     display: flex;
@@ -207,8 +212,17 @@ nav ul {
     margin-right: var(--space-xl);
   }
 
-  .tema_overskrift {
+  .tema_overskrift_web,
+  .tema_overskrift_ux,
+  .tema_overskrift_ani,
+  .tema_overskrift_redesign,
+  .tema_overskrift_portfolio,
+  .tema_overskrift_om {
     margin-right: var(--space-xl);
+  }
+
+  .tema_navn {
+    padding-left: var(--space-xl);
   }
   /*----------KNAP--------*/
   .link_produkt {

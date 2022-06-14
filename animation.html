@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex" />
     <link rel="icon" type="image/svg+xml" href="billeder/logo.svg" />
     <link rel="stylesheet" href="mutual_styles.css" />
-    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>animation</title>
   </head>
   <body>
@@ -17,21 +17,22 @@
       </div>
       <nav class="menu-bar">
         <ul>
-          <li class="toggle_web"><a href="web.html" style="text-decoration: none">Web</a></li>
-          <li class="toggle_ux"><a href="ux.html" style="text-decoration: none">UX</a></li>
+          <li><a href="web.html" style="text-decoration: none">Web</a></li>
+          <li><a href="ux.html" style="text-decoration: none">UX</a></li>
           <li class="toggle_animation"><a href="animation.html" style="text-decoration: none">Animation</a></li>
-          <li class="toggle_redesign"><a href="redesign.html" style="text-decoration: none">Redesign</a></li>
-          <li class="toggle_portfolio"><a href="redesign.html" style="text-decoration: none">Portfolio</a></li>
-          <li class="toggle_om"><a href="om.html" style="text-decoration: none">OM MIG</a></li>
+          <li><a href="redesign.html" style="text-decoration: none">Redesign</a></li>
+          <li><a href="redesign.html" style="text-decoration: none">Portfolio</a></li>
+          <li><a href="om.html" style="text-decoration: none">OM MIG</a></li>
         </ul>
       </nav>
     </header>
     <section class="grid0">
-      <div class="tema_overskrift"></div>
+      <div class="tema_overskrift_ani"></div>
       <div class="tema_navn"><h2>TEMA 4 - Grundlæggende animation</h2></div>
-    </section>    <main>
-      <section class="grid1">
-        <div class="formaal_koncept">
+    </section>
+    <main class="main_margin">
+      <section class="grid1_ani">
+        <div class="formaal_koncept_ani">
           <h3>FORMÅL</h3>
           <p>Dette tema havde til formål at få en grundlæggende forståelse for design og programmering indenfor Adobe Illustrator, CSS og særligt Javascript. Med fokus på brugergrænsefladen fik vi en baggrundsviden indenfor State Machine Diagrammer, Aktivitetsdiagrammer, digital fernisering, idegenereringsteknikker, skitsering og prototyper.</p>
           <h3>KONCEPT</h3>
@@ -39,25 +40,25 @@
         </div>
         <img class="spilforside_billede" src="billeder/spilforside.webp" alt="spilforside" />
       </section>
-      <div class="containerline"></div>
-      <section class="grid2">
-        <div class="highlights"><h1>HIGHTLIGHTS</h1></div>
-        <div class="highlight_css">
+      <div class="containerline_ani"></div>
+      <section class="grid2_ani">
+        <div class="highlights_ani"><h1>HIGHTLIGHTS</h1></div>
+        <div class="highlight_css_ani">
           <h3>CSS ANIMATIONER</h3>
           <p>Her ses, hvordan klassenavnet får tildelt et animationsnavn, samt tid og gentagelse. Ved hjælp af keyframes, var jeg i stand til at lave selve fade-out effekten på min stjerne. Her beskriver jeg stjernens handling ved brug af opacity, som går fra 100% til 0%. Hovedreglen er at bevægelse sker på container elementet og forsvindingsanimationerne sker på sprite elementet.</p>
-          <img class="css_billede" src="billeder/css_billede.webp" alt="cssbillede" />
+          <img class="css_billede_ani" src="billeder/css_billede.webp" alt="cssbillede" />
         </div>
 
-        <div class="highlight_javascript">
+        <div class="highlight_javascript_ani">
           <h3>JAVASCRIPT</h3>
           <p>Her ses et eksempel på, hvordan mit stjerne i mit spil agerer efter et klik med musen. En væsentlig del i Javascript var at vi kunne definere en variabel (her ved brug af const), som gør at vi er fri for at bruge document.querySelector , hver gang vi vil gribe fat i et element og hermed sparer hukommelse og CPU-kraft.</p>
-          <img class="javascript_billede" src="billeder/javascript_billede.webp" alt="javascriptbillede" />
+          <img class="javascript_billede_ani" src="billeder/javascript_billede.webp" alt="javascriptbillede" />
         </div>
       </section>
 
-      <section class="grid3">
-        <div class="proces"><h1>PROCES</h1></div>
-        <div class="proces_indhold">
+      <section class="grid3_ani">
+        <div class="proces_ani"><h1>PROCES</h1></div>
+        <div class="proces_indhold_ani">
           <h3>FRA BLYANTSSTREGER TIL VEKTOR GRAFIK</h3>
           <p>Design processen startede med håndtegnede skitser, hvorefter jeg begyndte at designe videre i Adobe Illustrator. Jeg havde fokus på de bløde former og strøj samt runde hjørner, for at skabe det søde, uskyldige og børnevenlige udtryk. Herefter begyndte jeg at gøre brug af en masse graduering, som jeg hurtigt fandt ud af, skabte ro i billeder og figurer. Jeg har benyttet en farvepalette for at holde en rød tråd igennem spillet og skabe dynamik samt harmoni i min grafik. Jeg var særligt opmærksom på at implementere mørke farver, men med noget kontrast af lyse/gule farver, som når man kigger op på nattehimlen.</p>
         </div>

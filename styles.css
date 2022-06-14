@@ -1,0 +1,977 @@
+/*-----------------------------------------
+-------------------INDEX.HTML------------------
+-------------------------------------------------*/
+@media (max-width: 800px) {
+  .desktop_splashbillede {
+    display: none;
+  }
+}
+.index_body {
+  background-image: url(billeder/splashmobile.svg);
+  background-size: cover;
+  max-width: 100%;
+}
+
+main {
+  margin-inline: 0;
+}
+
+.index_indhold h1 {
+  font-family: comorant_regular;
+  color: white;
+  white-space: nowrap;
+  display: grid;
+  justify-content: center;
+  margin-top: var(--space-xl);
+}
+
+.index_indhold h3 {
+  font-family: nunito;
+  color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+
+  display: grid;
+  justify-content: center;
+  margin-right: 5.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.containerline_index {
+  margin-bottom: var(--space-xs);
+  padding: 0.3px;
+  background-color: white;
+  margin-right: 5rem;
+  margin-left: 6.3rem;
+}
+
+section li a {
+  font-family: nunito;
+  color: white;
+  margin-left: 6.5rem;
+  line-height: 3rem;
+}
+
+/*-----------FOOTER----------*/
+.footer_index {
+  font-family: nunito;
+  background-color: white;
+  padding: var(--space-xs);
+  font-size: 0.7rem;
+  text-align: center;
+  position: sticky;
+  top: 100vh;
+}
+.index_body {
+  min-height: 100vh;
+}
+
+/*________________DESKTOP_____________*/
+
+@media (min-width: 800px) {
+  .index_body {
+    background-image: none;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .index_overskrift h1 {
+    display: grid;
+    justify-items: center;
+    margin-top: var(--space-l);
+    color: black;
+    padding-right: 10.5rem;
+  }
+
+  .index_overskrift h3 {
+    display: grid;
+    justify-content: center;
+    color: black;
+    padding-right: 10.5rem;
+  }
+
+  .containerline_index {
+    background-color: black;
+    margin-right: 10rem;
+    margin-left: 9.7rem;
+  }
+
+  section li a {
+    margin-left: 9.7rem;
+    color: black;
+  }
+
+  .desktop_splashbillede {
+    max-width: 80%;
+    margin-left: var(--space-xl);
+  }
+
+  .desktop_splashbillede,
+  .portfolio_index {
+    animation-name: fadein_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes fadein_kf {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /*-----------FOOTER----------*/
+  footer {
+    font-family: nunito;
+    background-color: white;
+    padding: var(--space-xs);
+    font-size: 0.7rem;
+    text-align: center;
+    position: sticky;
+    top: 100vh;
+    margin-top: var(--space-m);
+  }
+}
+
+/*-----------------------------------------
+-------------------WEB.HTML------------------
+-------------------------------------------------*/
+
+/*------------menu---------*/
+.toggle_web {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.tema_overskrift_web {
+  background-color: var(--moerkgroen);
+}
+/*---------FORMÅL/KONCEPT----------*/
+
+.grid1_web h3,
+.grid2_web h3,
+.grid3_web h3 {
+  margin-top: var(--space-m);
+}
+
+.splashbillede_web {
+  aspect-ratio: 774/439;
+  max-width: 100%;
+  margin-top: var(--space-s);
+}
+
+.containerline_web {
+  background-color: var(--lysbeige);
+  padding: 0.5rem;
+  margin-block: var(--space-m);
+}
+
+/*---------HIGHLIGHTS----------*/
+
+.galleri_web,
+.lastchild_web {
+  max-width: 100%;
+}
+
+.hightlight1_web,
+.hightlight2_web {
+  margin-top: var(--space-s);
+}
+/*-------KNAP_______*/
+.grid3_web {
+  display: grid;
+}
+/*_______________DESKTOP_____________*/
+@media (min-width: 800px) {
+  .main_margin {
+    margin-inline: var(--space-xl);
+  }
+
+  /*-------FORMÅL/KONCEPT--------*/
+
+  .grid1_web {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .splashbillede_web {
+    grid-column: 2;
+  }
+
+  /*-------HIGHTLIGHTS--------*/
+  .grid2_web {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2rem;
+    gap: var(--space-s);
+  }
+
+  .lastchild {
+    grid-column: 1;
+  }
+
+  .galleri_web {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .hightlight1_web {
+    writing-mode: sideways-rl;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    margin-top: 0;
+  }
+
+  .grid3_web {
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr;
+    margin-top: var(--space-m);
+    gap: var(--space-s);
+  }
+
+  .hightlight2_web {
+    writing-mode: sideways-lr;
+    grid-row: 1;
+    place-self: start;
+    margin-top: 0;
+  }
+
+  .lastchild_web {
+    grid-column: 2;
+  }
+}
+
+/*-----------------------------------------
+-------------------UX.HTML------------------
+--------------------------------------------*/
+
+/*------------menu---------*/
+.toggle_ux {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.tema_overskrift_ux {
+  background-color: var(--lysgroen);
+}
+
+/*-------FORMÅL/KONCEPT---------*/
+
+.grid1_ux h3,
+.grid2_ux h3,
+.grid3_ux h3,
+.grid4_ux h3 {
+  margin-top: var(--space-m);
+}
+
+.ux_forside {
+  max-width: 100%;
+  margin-top: var(--space-s);
+}
+
+.containerline_ux {
+  background-color: var(--lysgroen);
+  opacity: 0.8;
+  padding: 0.5rem;
+  margin-block: var(--space-m);
+}
+
+/*--------HIGHLIGHTS---------*/
+
+.pakkeloesninger_billede {
+  max-width: 100%;
+  margin-top: var(--space-xs);
+}
+
+.hightlights_ux {
+  margin-top: var(--space-s);
+}
+
+/*--------HIGHLIGHTS---------*/
+.moodboard_billede_ux {
+  max-width: 100%;
+  margin-top: var(--space-xs);
+}
+
+.proces_ux {
+  margin-top: var(--space-s);
+}
+
+.grid3_ux {
+  display: grid;
+}
+
+/*--------UX_PICTH_DECK---------*/
+.grid4_ux ul {
+  margin-block: var(--space-xs);
+  list-style-type: circle;
+}
+.ux_pitchdeck_billede {
+  max-width: 100%;
+}
+
+/*_____________DESKTOP_____________*/
+
+@media (min-width: 800px) {
+  /*--------FORMÅL/KONCEPT---------*/
+  .grid1_ux {
+    display: grid;
+    gap: var(--space-s);
+  }
+
+  .formaal_koncept_ux {
+    grid-column: 1;
+  }
+
+  .ux_forside {
+    grid-column: 2;
+  }
+  /*--------HIGHLIGHTS---------*/
+
+  .grid2_ux {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: 2rem 1fr 1fr;
+  }
+
+  .highlights_indhold_ux {
+    grid-column: 3;
+    margin-bottom: var(--space-s);
+  }
+
+  .hightlights_ux {
+    grid-column: 1;
+    grid-row: 1;
+    writing-mode: sideways-lr;
+    place-self: start;
+  }
+  .pakkeloesninger_billede {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /*--------PROCES---------*/
+
+  .grid3_ux {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2rem;
+    gap: var(--space-s);
+  }
+
+  .proces_ux {
+    grid-column: 3;
+    writing-mode: sideways-rl;
+    margin-top: var(--space-s);
+  }
+  .moodboard_billede_ux {
+    max-width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: var(--space-s);
+  }
+
+  /*--------UX_PICTH_DECK---------*/
+
+  .overskrift_ux {
+    display: grid;
+    justify-content: center;
+    margin-bottom: var(--space-m);
+    margin-top: var(--space-m);
+  }
+  .grid4_ux {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .feedback_ux {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .feedback_ux li {
+    line-height: var(--space-s);
+  }
+  .ux_pitchdeck_billede {
+    max-width: 100%;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin-top: var(--space-m);
+  }
+}
+
+/*-----------------------------------------
+-------------------ANIMATION.HTML------------
+--------------------------------------------*/
+
+/*------------menu---------*/
+.toggle_animation {
+  font-weight: bolder;
+  font-size: large;
+}
+.tema_overskrift_ani {
+  background-color: var(--orange);
+}
+
+/*----------FORMÅL/KONCEPT---------*/
+
+.grid1_ani h3,
+.grid2_ani h3,
+.grid3_ani h3 {
+  margin-top: var(--space-m);
+}
+
+.spilforside_billede {
+  max-width: 100%;
+  margin-top: var(--space-s);
+}
+
+.containerline_ani {
+  background-color: var(--lysbeige);
+  padding: 0.5rem;
+  margin-block: var(--space-m);
+}
+
+/*----------HIGHTLIGHTS-----------*/
+.grid2_ani {
+  display: grid;
+  gap: 2rem;
+}
+.css_billede_ani {
+  max-width: 100%;
+  grid-row: 3;
+  margin-top: var(--space-xs);
+}
+
+.javascript_billede_ani {
+  max-width: 100%;
+  margin-top: var(--space-xs);
+}
+
+/*----------PROCES-----------*/
+.grid3_ani {
+  display: grid;
+}
+.grid3_ani h1 {
+  margin-top: var(--space-m);
+}
+.bjoerne_skitse {
+  background-color: lightgray;
+  margin-bottom: 2rem;
+  padding: 3rem;
+  margin-inline: 4rem;
+  display: flex;
+  overflow-x: scroll;
+  margin-top: var(--space-m);
+}
+
+.bjoerne_skitse img {
+  max-width: 100%;
+}
+
+/*_____________DESKTOP______________*/
+@media (min-width: 800px) {
+  /*----------FORMÅL/KONCEPT---------*/
+
+  .grid1_ani {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .formaal_koncept_ani {
+    grid-column: 1;
+  }
+
+  .spilforside_billede {
+    grid-column: 2;
+  }
+
+  /*----------HIGHTLIGHTS---------*/
+  .grid2_ani {
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr;
+  }
+  .highlights_ani {
+    grid-column: 1;
+    writing-mode: sideways-lr;
+    place-self: start;
+    margin-top: var(--space-m);
+  }
+
+  .css_billede_ani {
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 50%;
+  }
+
+  /*----------PROCES---------*/
+  .grid3_ani {
+    display: grid;
+    grid-template-columns: 1fr 2rem 1fr;
+    gap: 1rem;
+    margin-top: var(--space-m);
+  }
+  .proces_ani {
+    grid-column: 2;
+    writing-mode: sideways-lr;
+    place-self: start;
+  }
+
+  .bjoerne_skitse {
+    width: 90%;
+    grid-row: 1;
+  }
+}
+
+/*-----------------------------------------
+-------------------REDESIGN.HTML-------------
+--------------------------------------------*/
+
+/*------------menu---------*/
+.toggle_redesign {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.tema_overskrift_redesign {
+  background-color: var(--brun);
+}
+
+.grid1_re h3,
+.grid2_re h3,
+.grid3_re h3,
+.grid4_re h3,
+.grid5_re h3 {
+  margin-top: var(--space-m);
+}
+
+/*------------FORMÅL---------*/
+.grid1_re {
+  display: grid;
+  background-color: var(--lysbeige);
+  padding: var(--space-s);
+  padding-top: 0;
+}
+
+/*------------KONCEPT---------*/
+.grid2_re p {
+  margin-bottom: var(--space-xs);
+}
+.pilot_video {
+  max-width: 100%;
+}
+
+.grid3_re p {
+  margin-bottom: var(--space-xs);
+}
+
+.intro_video {
+  max-width: 100%;
+}
+
+.containerline_re {
+  background-color: var(--lysbeige);
+  padding: 0.5rem;
+  margin-block: var(--space-m);
+}
+
+/*------------HIGHLIGHTS---------*/
+.grid4_re p {
+  margin-bottom: var(--space-xs);
+}
+
+.burgermenu_billede {
+  max-width: 100%;
+}
+
+.grid_billede_re {
+  max-width: 100%;
+}
+
+/*------------PROCES---------*/
+.grid5_re h1 {
+  margin-top: var(--space-l);
+}
+
+.grid5_re p {
+  margin-bottom: var(--space-xs);
+}
+
+.proces_redesign {
+  max-width: 100%;
+}
+.pink_jesus_video {
+  max-width: 100%;
+}
+
+/*------------KNAP---------*/
+.link_produkt {
+  display: grid;
+}
+
+/*_________________DESKTOP______________*/
+
+/*------------FORMÅL---------*/
+@media (min-width: 800px) {
+  .grid1_re {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: var(--space-l);
+    gap: 1.5rem;
+    padding-bottom: var(--space-m);
+  }
+
+  .indhold1_re {
+    grid-column: 1;
+  }
+
+  .indhold2_re {
+    grid-column: 2;
+  }
+
+  /*------------KONCEPT---------*/
+
+  .grid2_re {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid2_re h3 {
+    grid-column: 1;
+    margin-top: var(--space-xl);
+  }
+  .grid2_re p {
+    grid-column: 1;
+    margin-right: var(--space-s);
+  }
+  .pilot_video {
+    grid-column: 2;
+    max-width: 90%;
+    margin-left: var(--space-l);
+  }
+
+  .grid3_re {
+    display: grid;
+  }
+
+  .grid3_re h3 {
+    grid-column: 1;
+  }
+
+  .grid3_re p {
+    grid-column: 1;
+  }
+
+  .intro_video {
+    grid-column: 2;
+    max-width: 100%;
+  }
+
+  /*------------HIGHLIGHTS---------*/
+
+  .grid4_re {
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .highlights_re {
+    grid-column: 1;
+    writing-mode: sideways-lr;
+    place-self: start;
+  }
+
+  .burger_indhold_re {
+    grid-column: 2;
+  }
+
+  .burger_indhold_re h3 {
+    margin-top: 0;
+  }
+
+  .burgermenu_billede {
+    grid-column: 3;
+  }
+
+  .index_indhold_re {
+    grid-column: 2;
+  }
+
+  .index_indhold_re h3 {
+    margin-top: 0;
+  }
+  .grid_billede_re {
+    grid-column: 3;
+  }
+
+  /*------------PROCES---------*/
+  .grid5_re {
+    display: grid;
+    grid-template-columns: 1fr 2rem 1fr;
+    margin-block: var(--space-m);
+    gap: 1rem;
+  }
+
+  .highlight_ukirke {
+    grid-column: 2;
+    writing-mode: sideways-rl;
+    margin-top: -4rem;
+  }
+
+  .pink_jesus_video {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .proces_indhold_re {
+    grid-column: 3;
+  }
+
+  .proces_indhold_re h3 {
+    margin-top: 0;
+  }
+
+  .link_produkt {
+    margin-top: var(--space-xl);
+  }
+}
+
+/*-----------------------------------------
+-------------------PORTFOLIO.HTML------------
+--------------------------------------------*/
+
+/*------------menu---------*/
+.toggle_portfolio {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.tema_overskrift_portfolio {
+  background-color: var(--sort);
+}
+
+/*------------FORMÅL/KONCEPT---------*/
+
+.grid1_pf h3,
+.grid2_pf h3,
+.grid3_pf h3 {
+  margin-top: var(--space-m);
+}
+
+.formaal_pf {
+  background-color: var(--moerkgroen);
+  color: white;
+  padding: var(--space-m);
+}
+
+.formaal_pf h3 {
+  margin-top: 0;
+}
+
+/*------------HIGHLIGHTS---------*/
+.highlights_pf {
+  margin-top: var(--space-xl);
+}
+
+.burgermenu_pf h3 {
+  margin-top: var(--space-xs);
+}
+.laes_mere_her1 {
+  font-weight: bolder;
+}
+
+.containerline_pf {
+  background-color: var(--sort);
+  padding: 0.5rem;
+  margin-block: var(--space-m);
+}
+/*------------PROCES---------*/
+.proces_indhold_pf {
+  margin-top: var(--space-xl);
+}
+
+.moodboard_indhold_pf h3 {
+  margin-top: var(--space-xs);
+}
+
+.moodboard_pf {
+  max-width: 100%;
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-xs);
+}
+
+.adobe_color_pf {
+  max-width: 100%;
+}
+/*____________DESKTOPVERSION_______________*/
+@media (min-width: 800px) {
+  /*------------FORMÅL/KONCEPT---------*/
+  .grid1_pf {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  /*------------HIGHLIGHTS---------*/
+  .grid2_pf {
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .highlights_pf {
+    grid-column: 1;
+    grid-row: 1;
+    writing-mode: sideways-lr;
+  }
+
+  .burgermenu_pf {
+    margin-top: var(--space-m);
+    margin-inline: var(--space-xs);
+  }
+
+  /*------------PROCES---------*/
+
+  .grid3_pf {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .proces_indhold_pf {
+    background-color: var(--lysbeige);
+    padding: var(--space-l);
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin-top: 0;
+  }
+
+  .farver_indhold_pf {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .moodboard_pf {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .adobe_color_pf {
+    grid-column: 1;
+  }
+}
+
+/*-----------------------------------------
+-------------------OM.HTML------------
+--------------------------------------------*/
+
+/*------------menu---------*/
+.toggle_om {
+  font-weight: bolder;
+  font-size: large;
+}
+/*------------container1---------*/
+
+.container1_om {
+  background-color: var(--orange);
+  box-shadow: 5px 8px 25px grey;
+  padding: var(--space-m);
+  display: grid;
+  margin-block: var(--space-s);
+}
+.container1_om img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.container1_om h3,
+.container2_om h3 {
+  color: white;
+  margin-top: var(--space-s);
+}
+
+.container1_om p,
+.container2_om p {
+  color: white;
+}
+
+/*------------container2---------*/
+.container2_om {
+  background-color: var(--lysgroen);
+  box-shadow: 5px 8px 25px grey;
+  padding-block: var(--space-xs);
+  padding-bottom: var(--space-s);
+  padding-left: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+/*------------container3---------*/
+
+.container3_om {
+  background-color: var(--beige);
+  box-shadow: 5px 8px 25px grey;
+  padding: var(--space-s);
+}
+
+.container3_om h1 {
+  margin-bottom: var(--space-xs);
+}
+.container3_om p {
+  color: black;
+}
+
+.beskrivelse1_om {
+  margin-bottom: var(--space-xs);
+}
+
+/*----------DESKTOP-----------*/
+
+@media (min-width: 800px) {
+  /*----------container1-----------*/
+
+  .container1_om {
+    margin-right: var(--space-m);
+    margin-top: 0;
+  }
+  .grid1_om {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+  }
+  .selvportraet {
+    max-width: 50%;
+  }
+
+  /*----------container2-----------*/
+  .container2_om {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: var(--space-l);
+  }
+
+  .indhold_col1_om {
+    grid-column: 1;
+  }
+  .indhold_col2_om {
+    grid-column: 2;
+  }
+  /*----------PROFILBESKRIVELSE-----------*/
+  .container3_om {
+    padding: var(--space-l);
+    padding-inline: var(--space-m);
+    padding-right: var(--space-xl);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .beskrivelse1_om {
+    grid-column: 1;
+  }
+
+  .beskrivelse2_om {
+    grid-column: 2;
+  }
+}

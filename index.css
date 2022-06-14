@@ -34,7 +34,7 @@ h3 {
   margin-bottom: 1.3rem;
 }
 
-.underline {
+.containerline_index {
   margin-bottom: var(--space-xs);
   padding: 0.3px;
   background-color: white;

@@ -11,7 +11,9 @@
 
 /*------------FORMÅL/KONCEPT---------*/
 
-section h3 {
+.grid1_pf h3,
+.grid2_pf h3,
+.grid3_pf h3 {
   margin-top: var(--space-m);
 }
 

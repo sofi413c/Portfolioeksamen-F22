@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="mutual_styles.css" />
-    <link rel="stylesheet" href="redesign.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>redesign</title>
   </head>
   <body>
@@ -16,32 +16,32 @@
       </div>
       <nav class="menu-bar">
         <ul>
-          <li class="toggle_web"><a href="web.html" style="text-decoration: none">Web</a></li>
-          <li class="toggle_ux"><a href="ux.html" style="text-decoration: none">UX</a></li>
-          <li class="toggle_animation"><a href="animation.html" style="text-decoration: none">Animation</a></li>
+          <li><a href="web.html" style="text-decoration: none">Web</a></li>
+          <li><a href="ux.html" style="text-decoration: none">UX</a></li>
+          <li><a href="animation.html" style="text-decoration: none">Animation</a></li>
           <li class="toggle_redesign"><a href="redesign.html" style="text-decoration: none">Redesign</a></li>
-          <li class="toggle_portfolio"><a href="portfolio.html" style="text-decoration: none">Portfolio</a></li>
-          <li class="toggle_om"><a href="om.html" style="text-decoration: none">OM MIG</a></li>
+          <li><a href="portfolio.html" style="text-decoration: none">Portfolio</a></li>
+          <li><a href="om.html" style="text-decoration: none">OM MIG</a></li>
         </ul>
       </nav>
     </header>
-    <section class="grid0">
-      <div class="tema_overskrift"></div>
+    <section class="grid0_re">
+      <div class="tema_overskrift_redesign"></div>
       <div class="tema_navn"><h2>TEMA 5 - Grundlæggende indhold</h2></div>
     </section>
-    <main>
-      <section class="grid1">
+    <main class="main_margin">
+      <section class="grid1_re">
         <h3>FORMÅL</h3>
-        <div class="indhold1"><p>Dette tema havde til formål at give en grundlæggende forståelse inden for videoproduktion, herunder forarbejdet, selve optagelserne og efterarbejdet ifm. videoredigering, samt implementering af dette i et website. Et case-samarbejde med en selvvalgt virksomhed skulle samtidig give os en læring i at udføre en professionel kommunikation med kunder.</p></div>
-        <div class="indhold2"><p>Ud fra foregående temaer skulle virksomhedens hjemmeside redesignes. Undervejs i undervisningen fik vi tillært viden omkring immaterielle rettigheder, oprets- og markedsføringslov, som var væsentlig ift. kommende projektarbejde med virksomheder.</p></div>
+        <div class="indhold1_re"><p>Dette tema havde til formål at give en grundlæggende forståelse inden for videoproduktion, herunder forarbejdet, selve optagelserne og efterarbejdet ifm. videoredigering, samt implementering af dette i et website. Et case-samarbejde med en selvvalgt virksomhed skulle samtidig give os en læring i at udføre en professionel kommunikation med kunder.</p></div>
+        <div class="indhold2_re"><p>Ud fra foregående temaer skulle virksomhedens hjemmeside redesignes. Undervejs i undervisningen fik vi tillært viden omkring immaterielle rettigheder, oprets- og markedsføringslov, som var væsentlig ift. kommende projektarbejde med virksomheder.</p></div>
       </section>
 
-      <section class="grid2">
+      <section class="grid2_re">
         <h3>KONCEPT No1</h3>
         <p>Pilot-projektet skulle belyse en person med en passion, hvor min makker Felicia Hermann og jeg valgte at interviewe Tiago og hans passion for mad. Videoen var en øvelse, så vi var klædt på til at tage ud og filme til case-samarbejdet med vores virksomhed. Herefter skulle projektet implementeres i et såkaldt pilot-site, som præsenterede vores video, person og koncept.</p>
         <video class="pilot_video" width="320" height="240" controls src="https://sofiexiao.dk/kea/05_indhold/01_pilotvideo/pilotvideo.mp4"></video>
       </section>
-      <section class="grid3">
+      <section class="grid3_re">
         <h3>KONCEPT No2</h3>
         <p>
           Nr. 2 projekt var et gruppeprojekt, som bestod i at finde en virksomhed at samarbejde med. <br />
@@ -49,27 +49,27 @@
         </p>
         <video class="intro_video" width="320" height="240" controls src="https://feliciahetman.dk/kea/05_indhold/02_redesign/hvad_er_ukirke.mp4"></video>
       </section>
-      <div class="containerline"></div>
+      <div class="containerline_re"></div>
 
-      <section class="grid4">
-        <div class="highlights"><h1>HIGHTLIGHTS</h1></div>
+      <section class="grid4_re">
+        <div class="highlights_re"><h1>HIGHTLIGHTS</h1></div>
 
-        <div class="burger_indhold">
+        <div class="burger_indhold_re">
           <h3>BURGERMENU</h3>
           <p>Vi har udarbejdet en burgermenu i Javascript for at optimere brugervenligheden i og med skærmkapaciteten formindskes markant i mobilversion. Her laves først to variabler som henviser til mine 2 menuklasser i HTML. Herefter laves en funktion jeg kalder toggleMenu, hvor jeg herunder tildeler en toggle klasse på min .main-menu”. Jeg laver herunder endnu en variabel som hedder menuShown, som med classList.contains fortæller at den skal indeholde klassen “shown”, jeg lavede ovenover. Med en if-else statement fortæller jeg at teksten skal vise “Menu” eller “Luk” alt efter om menuShown er true eller false. Til slut tilføjer jeg et klik-event til min btn, for at igangsætte toggleMenu.</p>
         </div>
         <img class="burgermenu_billede" src="billeder/burgermenu.webp" alt="burgermenu" />
 
-        <div class="index_indhold">
+        <div class="index_indhold_re">
           <h3>Z-INDEX</h3>
           <p>Med den læring jeg har fået inden for kodning, forsøgte jeg at udfordre mig selv ved at bryde nogle konventioner. Herved at lade elementerne overlappe hinanden og bryde nogle grids. Jeg benyttede mig af z-index, definerede grid-template-column præcist ved at angive rem kolonnerne i rem, samt tildelte alle mine elementer i klasser: billede, farveboks og tekst.</p>
         </div>
-        <img class="grid_billede" src="billeder/zindex.webp" alt="burgermenu" />
+        <img class="grid_billede_re" src="billeder/zindex.webp" alt="burgermenu" />
       </section>
 
-      <section class="grid5">
+      <section class="grid5_re">
         <div class="highlight_ukirke"><h1>UKIRKE</h1></div>
-        <div class="proces_indhold">
+        <div class="proces_indhold_re">
           <h3>PROCES</h3>
           <p>Undervejs i redesignprocessen arbejdede vi meget iterativt med et ønsket mål om at ramme virksomhedens ønsker ift. den nye hjemmesides budskab. Her foretog vi en masse test som bl.a. heuristisk test, BERT-test, 5 sekunders test mv. Det var både testpersoner ude fra som gennemførte testene, men også virksomheden selv.</p>
           <p>Videoen som ses til ventre for, er ekstramateriale til uKirke, da Pink Jesus var en sjov gimmick, der desværre ikke var plads til at få med i promoveringsvideoen.</p>

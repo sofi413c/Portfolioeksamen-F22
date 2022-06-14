@@ -4,13 +4,13 @@
   font-size: large;
 }
 
-  .tema_overskrift {
-    background-color: var(--moerkgroen);
-    color: white;
+.tema_overskrift {
+  background-color: var(--moerkgroen);
+  color: white;
 
-    font-family: nunito;
-    box-shadow: 5px 8px 25px grey;
-  }
+  font-family: nunito;
+  box-shadow: 5px 8px 25px grey;
+}
 /*---------FORMÅL/KONCEPT----------*/
 
 section h3 {
@@ -23,7 +23,7 @@ section h3 {
   margin-top: var(--space-s);
 }
 
-.containerline {
+.containerline_web {
   background-color: var(--lysbeige);
   padding: 0.5rem;
   margin-block: var(--space-m);
@@ -36,24 +36,23 @@ section h3 {
   max-width: 100%;
 }
 
-.hightlight1,
-.hightlight2 {
+.hightlight1_web,
+.hightlight2_web {
   margin-top: var(--space-s);
 }
 /*-------KNAP_______*/
-.grid3 {
+.grid3_web {
   display: grid;
 }
 /*_______________DESKTOP_____________*/
 @media (min-width: 800px) {
-  main {
+  main_margin {
     margin-inline: var(--space-xl);
   }
 
-
   /*-------FORMÅL/KONCEPT--------*/
 
-  .grid1 {
+  .grid1_web {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -64,7 +63,7 @@ section h3 {
   }
 
   /*-------HIGHTLIGHTS--------*/
-  .grid2 {
+  .grid2_web {
     display: grid;
     grid-template-columns: 1fr 1fr 2rem;
     gap: var(--space-s);
@@ -79,21 +78,21 @@ section h3 {
     grid-row: 1 / span 2;
   }
 
-  .hightlight1 {
+  .hightlight1_web {
     writing-mode: sideways-rl;
     grid-column: 3;
     grid-row: 1 / span 2;
     margin-top: 0;
   }
 
-  .grid3 {
+  .grid3_web {
     display: grid;
     grid-template-columns: 2rem 1fr 1fr;
     margin-top: var(--space-m);
     gap: var(--space-s);
   }
 
-  .hightlight2 {
+  .hightlight2_web {
     writing-mode: sideways-lr;
     grid-row: 1;
     place-self: start;
@@ -103,6 +102,4 @@ section h3 {
   .lastchild_web {
     grid-column: 2;
   }
-
-  /*----------KNAP--------*/
 }

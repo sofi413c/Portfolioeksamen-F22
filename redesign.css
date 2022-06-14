@@ -4,7 +4,7 @@
   font-size: large;
 }
 
-.tema_overskrift {
+.tema_overskrift_re {
   background-color: var(--brun);
 }
 
@@ -13,7 +13,7 @@ section h3 {
 }
 
 /*------------FORMÅL---------*/
-.grid1 {
+.grid1_re {
   display: grid;
   background-color: var(--lysbeige);
   padding: var(--space-s);
@@ -21,14 +21,14 @@ section h3 {
 }
 
 /*------------KONCEPT---------*/
-.grid2 p {
+.grid2_re p {
   margin-bottom: var(--space-xs);
 }
 .pilot_video {
   max-width: 100%;
 }
 
-.grid3 p {
+.grid3_re p {
   margin-bottom: var(--space-xs);
 }
 
@@ -36,14 +36,14 @@ section h3 {
   max-width: 100%;
 }
 
-.containerline {
+.containerline_re {
   background-color: var(--lysbeige);
   padding: 0.5rem;
   margin-block: var(--space-m);
 }
 
 /*------------HIGHLIGHTS---------*/
-.grid4 p {
+.grid4_re p {
   margin-bottom: var(--space-xs);
 }
 
@@ -51,16 +51,16 @@ section h3 {
   max-width: 100%;
 }
 
-.grid_billede {
+.grid_billede_re {
   max-width: 100%;
 }
 
 /*------------PROCES---------*/
-.grid5 h1 {
+.grid5_re h1 {
   margin-top: var(--space-l);
 }
 
-.grid5 p {
+.grid5_re p {
   margin-bottom: var(--space-xs);
 }
 .pink_jesus_video {
@@ -76,7 +76,7 @@ section h3 {
 
 /*------------FORMÅL---------*/
 @media (min-width: 800px) {
-  .grid1 {
+  .grid1_re {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-inline: var(--space-l);
@@ -84,25 +84,25 @@ section h3 {
     padding-bottom: var(--space-m);
   }
 
-  .indhold1 {
+  .indhold1_re {
     grid-column: 1;
   }
 
-  .indhold2 {
+  .indhold2_re {
     grid-column: 2;
   }
 
   /*------------KONCEPT---------*/
 
-  .grid2 {
+  .grid2_re {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .grid2 h3 {
+  .grid2_re h3 {
     grid-column: 1;
     margin-top: var(--space-xl);
   }
-  .grid2 p {
+  .grid2_re p {
     grid-column: 1;
     margin-right: var(--space-s);
   }
@@ -112,15 +112,15 @@ section h3 {
     margin-left: var(--space-l);
   }
 
-  .grid3 {
+  .grid3_re {
     display: grid;
   }
 
-  .grid3 h3 {
+  .grid3_re h3 {
     grid-column: 1;
   }
 
-  .grid3 p {
+  .grid3_re p {
     grid-column: 1;
   }
 
@@ -131,23 +131,23 @@ section h3 {
 
   /*------------HIGHLIGHTS---------*/
 
-  .grid4 {
+  .grid4_re {
     display: grid;
     grid-template-columns: 2rem 1fr 1fr;
     gap: 2rem;
   }
 
-  .highlights {
+  .highlights_re {
     grid-column: 1;
     writing-mode: sideways-lr;
     place-self: start;
   }
 
-  .burger_indhold {
+  .burger_indhold_re {
     grid-column: 2;
   }
 
-  .burger_indhold h3 {
+  .burger_indhold_re h3 {
     margin-top: 0;
   }
 
@@ -155,19 +155,19 @@ section h3 {
     grid-column: 3;
   }
 
-  .index_indhold {
+  .index_indhold_re {
     grid-column: 2;
   }
 
-  .index_indhold h3 {
+  .index_indhold_re h3 {
     margin-top: 0;
   }
-  .grid_billede {
+  .grid_billede_re {
     grid-column: 3;
   }
 
   /*------------PROCES---------*/
-  .grid5 {
+  .grid5_re {
     display: grid;
     grid-template-columns: 1fr 2rem 1fr;
     margin-block: var(--space-m);
@@ -185,11 +185,11 @@ section h3 {
     grid-row: 1;
   }
 
-  .proces_indhold {
+  .proces_indhold_re {
     grid-column: 3;
   }
 
-  .proces_indhold h3 {
+  .proces_indhold_re h3 {
     margin-top: 0;
   }
 
