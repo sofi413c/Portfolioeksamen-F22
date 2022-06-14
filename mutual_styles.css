@@ -132,19 +132,22 @@ li {
 
 header {
   background-color: white;
-  padding-bottom: var(--space-xs);
+  display: flex;
+  flex-flow: wrap; /*gør at tingene lægger sig under hinanden, når skærmen bliver for lille og tingene støder ind i hinanden og der ikke er plads*/
+  justify-content: space-between;
 }
 
 .navlogo {
- padding: var(--space-xs);
+  padding: var(--space-xs);
+  padding-top: var(--space-s);
+  padding-left: var(--space-s);
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
   gap: 30px;
   list-style: none;
-  font-family: nunito;
+  padding-bottom: var(--space-xs);
 }
 
 /*---------KNAP----------*/
@@ -213,6 +216,10 @@ nav ul {
     margin-right: var(--space-xl);
   }
 
+  .toggle-btn {
+    display: none;
+  }
+
   .tema_overskrift_web,
   .tema_overskrift_ux,
   .tema_overskrift_ani,
@@ -233,5 +240,45 @@ nav ul {
   /*-------FOOTER----------*/
   .footer img {
     max-width: 2%;
+  }
+}
+
+/*-----------------BURGERMENU MOBILVERSION----------------*/
+@media (max-width: 800px) {
+  .toggle-btn {
+    display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+    font-family: nunito;
+    font-weight: bolder;
+    cursor: pointer;
+    padding-right: var(--space-s);
+  }
+
+  .menu-bar {
+    display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+  }
+
+  .menu-bar ul {
+    display: none; /* Fjern menu-listen som standard */
+  }
+
+  .menu-bar.shown ul {
+    /* Vis menu-listen, når klassen ".shown" er til stede */
+    border-top: 1px solid #000;
+    display: flex;
+    white-space: nowrap;
+    padding-top: var(--space-xs);
+    gap: 1.3rem;
+    flex: 1 1 100%; /*fortæller at teksten skal optage 100% af pladsen*/
+    flex-flow: column;
+  }
+
+  nav ul {
+    padding: var(--space-xs);
+  }
+}
+@media (min-width: 700px) {
+  header {
+    display: flex;
+    flex-flow: wrap;
   }
 }
