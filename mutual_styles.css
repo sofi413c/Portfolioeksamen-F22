@@ -84,11 +84,12 @@ li {
 
 .grid0 {
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .tema_overskrift_web,
 .tema_overskrift_ux,
 .tema_overskrift_ani,
-.tema_overskrift_redesign,
+.tema_overskrift_re,
 .tema_overskrift_portfolio,
 .tema_overskrift_om {
   box-shadow: 5px 8px 25px grey;
@@ -113,6 +114,8 @@ li {
 }
 
 .tema_navn {
+  grid-row: 1;
+  grid-column: 1;
   color: white;
   padding: var(--space-s);
   padding-left: var(--space-m);
@@ -133,9 +136,7 @@ header {
 }
 
 .navlogo {
-  display: grid;
-  justify-content: center;
-  padding-block: var(--space-xs);
+ padding: var(--space-xs);
 }
 
 nav ul {
@@ -215,7 +216,7 @@ nav ul {
   .tema_overskrift_web,
   .tema_overskrift_ux,
   .tema_overskrift_ani,
-  .tema_overskrift_redesign,
+  .tema_overskrift_re,
   .tema_overskrift_portfolio,
   .tema_overskrift_om {
     margin-right: var(--space-xl);

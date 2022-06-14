@@ -125,7 +125,7 @@ section li a {
   }
 
   /*-----------FOOTER----------*/
-  footer {
+  .footer_index {
     font-family: nunito;
     background-color: white;
     padding: var(--space-xs);
@@ -536,7 +536,7 @@ section li a {
   font-size: large;
 }
 
-.tema_overskrift_redesign {
+.tema_overskrift_re {
   background-color: var(--brun);
 }
 
