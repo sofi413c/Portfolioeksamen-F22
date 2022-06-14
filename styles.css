@@ -165,8 +165,9 @@ section li a {
 }
 
 .containerline_web {
-  background-color: var(--lysbeige);
+  background-color: var(--moerkgroen);
   padding: 0.5rem;
+  opacity: 0.8;
   margin-block: var(--space-m);
 }
 
@@ -430,8 +431,9 @@ section li a {
 }
 
 .containerline_ani {
-  background-color: var(--lysbeige);
+  background-color: var(--orange);
   padding: 0.5rem;
+  opacity: 0.8;
   margin-block: var(--space-m);
 }
 
@@ -573,8 +575,9 @@ section li a {
 }
 
 .containerline_re {
-  background-color: var(--lysbeige);
+  background-color: var(--brun);
   padding: 0.5rem;
+  opacity: 0.8;
   margin-block: var(--space-m);
 }
 
@@ -785,6 +788,7 @@ section li a {
 .containerline_pf {
   background-color: var(--sort);
   padding: 0.5rem;
+  opacity: 0.8;
   margin-block: var(--space-m);
 }
 /*------------PROCES---------*/
