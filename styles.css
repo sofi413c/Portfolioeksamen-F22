@@ -640,37 +640,26 @@ section li a {
   .grid2_re {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
-  .grid2_re h3 {
+  .koncept1_indhold_re {
     grid-column: 1;
-    margin-top: var(--space-xl);
+    margin-top: var(--space-s);
   }
-  .grid2_re p {
-    grid-column: 1;
-    margin-right: var(--space-s);
-  }
+
   .pilot_video {
+    grid-column: 1;
+    max-width: 100%;
+  }
+
+  .koncept2_indhold_re {
     grid-column: 2;
-    max-width: 90%;
-    margin-left: var(--space-l);
+    margin-top: var(--space-s);
+    grid-row: 1;
   }
-
-  .grid3_re {
-    display: grid;
-  }
-
-  .grid3_re h3 {
-    grid-column: 1;
-  }
-
-  .grid3_re p {
-    grid-column: 1;
-  }
-
   .intro_video {
     grid-column: 2;
-    max-width: 90%;
-    margin-left: var(--space-l);
+    max-width: 100%;
   }
 
   /*------------HIGHLIGHTS---------*/
@@ -720,6 +709,7 @@ section li a {
     grid-template-columns: 1fr 2rem 1fr;
     margin-block: var(--space-m);
     gap: 1rem;
+    margin-top: var(--space-xl);
   }
 
   .highlight_ukirke {
@@ -731,7 +721,6 @@ section li a {
   .pink_jesus_video {
     grid-column: 1;
     grid-row: 1;
-
   }
 
   .proces_indhold_re {
@@ -743,7 +732,7 @@ section li a {
   }
 
   .link_produkt {
-    margin-top: var(--space-xl);
+    margin-top: var(--space-s);
   }
 }
 
