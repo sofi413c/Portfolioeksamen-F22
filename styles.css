@@ -288,8 +288,8 @@ section li a {
   margin-top: var(--space-xs);
 }
 
-.hightlights_ux {
-  margin-top: var(--space-s);
+.highlights_ux {
+  margin-top: var(--space-xs);
 }
 
 /*--------HIGHLIGHTS---------*/
@@ -344,7 +344,7 @@ section li a {
     margin-bottom: var(--space-s);
   }
 
-  .hightlights_ux {
+  .highlights_ux {
     grid-column: 1;
     grid-row: 1;
     writing-mode: vertical-lr;
