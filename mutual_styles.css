@@ -137,10 +137,11 @@ header {
   justify-content: space-between;
 }
 
-.navlogo {
+.logo {
   padding: var(--space-xs);
   padding-top: var(--space-s);
   padding-left: var(--space-s);
+  max-width: 90%;
 }
 
 nav ul {
@@ -207,9 +208,7 @@ nav ul {
     justify-content: space-between;
   }
 
-  .logo {
-    padding-inline: 2rem;
-  }
+
 
   nav ul {
     padding-top: var(--space-m);
