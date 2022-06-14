@@ -222,7 +222,7 @@ section li a {
   }
 
   .hightlight1_web {
-    writing-mode: sideways-rl;
+    writing-mode: vertical-rl;
     grid-column: 3;
     grid-row: 1 / span 2;
     margin-top: 0;
@@ -236,7 +236,7 @@ section li a {
   }
 
   .hightlight2_web {
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     grid-row: 1;
     place-self: start;
     margin-top: 0;
@@ -348,7 +348,7 @@ section li a {
   .hightlights_ux {
     grid-column: 1;
     grid-row: 1;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     place-self: start;
   }
   .pakkeloesninger_billede {
@@ -366,7 +366,7 @@ section li a {
 
   .proces_ux {
     grid-column: 3;
-    writing-mode: sideways-rl;
+    writing-mode: vertical-rl;
     margin-top: var(--space-s);
   }
   .moodboard_billede_ux {
@@ -499,7 +499,7 @@ section li a {
   }
   .highlights_ani {
     grid-column: 1;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     place-self: start;
     margin-top: var(--space-m);
   }
@@ -519,7 +519,7 @@ section li a {
   }
   .proces_ani {
     grid-column: 2;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     place-self: start;
   }
 
@@ -683,7 +683,7 @@ section li a {
 
   .highlights_re {
     grid-column: 1;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     place-self: start;
   }
 
@@ -720,7 +720,7 @@ section li a {
 
   .highlight_ukirke {
     grid-column: 2;
-    writing-mode: sideways-rl;
+    writing-mode: vertical-rl;
     margin-top: -4rem;
   }
 
@@ -822,14 +822,12 @@ section li a {
   /*------------HIGHLIGHTS---------*/
   .grid2_pf {
     display: grid;
-    grid-template-columns: 2rem 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
 
   .highlights_pf {
-    grid-column: 1;
-    grid-row: 1;
-    writing-mode: sideways-lr;
+    display: none;
   }
 
   .burgermenu_pf {
